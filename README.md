@@ -1,14 +1,15 @@
 # AI Quadruped Robot: Complete Sim-to-Real Pipeline
 
-![Robot Demo](media/robot_hero_shot.jpg)
+![quad_pic1](https://github.com/user-attachments/assets/1480f8f4-e1a9-4eae-be6c-681e87e2a65d)
+
 
 **Complete open-source quadruped robot with AI-driven locomotion trained in Isaac Lab and deployed on physical hardware via ROS2.**
 
-## 🤖 Overview
+## Overview
 
 This project demonstrates a full sim-to-real transfer pipeline: training a quadruped robot to walk in Isaac Lab simulation, then deploying the trained neural network to a physical 3D-printed robot via ROS2 and Arduino.
 
-## ✨ Features
+## Features
 
 - **Full sim-to-real pipeline**: Isaac Lab → PyTorch → ROS2 → Physical robot
 - **AI-powered locomotion**: Neural network trained with reinforcement learning
@@ -16,11 +17,11 @@ This project demonstrates a full sim-to-real transfer pipeline: training a quadr
 - **Modular design**: Easy to modify and extend
 - **Complete documentation**: Hardware assembly to software deployment
 
-## 🎯 What You'll Build
+## What You'll Build
 
 A 12-DOF quadruped robot controlled by an AI trained in simulation that responds to velocity commands and walks autonomously.
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 - **Training**: 999 episodes in Isaac Lab
 - **Control Frequency**: 20Hz AI inference, 5Hz Arduino communication  
@@ -30,7 +31,7 @@ A 12-DOF quadruped robot controlled by an AI trained in simulation that responds
 - **Observation Space**: 72 dimensions
 - **Action Space**: 12 joint position targets
 
-## 🛠️ Hardware Specifications
+## Hardware Specifications
 
 ### Core Components
 - **12x MG996R Servos** (3 per leg: hip, knee, ankle)
@@ -44,7 +45,7 @@ A 12-DOF quadruped robot controlled by an AI trained in simulation that responds
 - **Range**: 0-180 degrees with custom angle conversions
 - **Control**: Position control via PWM
 
-## 💻 Software Stack
+## Software Stack
 
 ### Training Environment
 - **Isaac Lab**: NVIDIA's robotics simulation platform
@@ -58,7 +59,7 @@ A 12-DOF quadruped robot controlled by an AI trained in simulation that responds
 - **PyTorch**: Neural network inference engine
 - **Arduino**: Hardware interface and servo control
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Hardware Assembly
 ```bash
@@ -105,7 +106,7 @@ ros2 run arduino_control ai_controller
 ros2 run arduino_control velocity_controller
 ```
 
-## 🎮 Controls
+## Controls
 
 - **W**: Forward motion
 - **S**: Backward motion  
@@ -116,7 +117,7 @@ ros2 run arduino_control velocity_controller
 - **X**: Gradual stop
 - **SPACE**: Emergency stop
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 sim2real-3d-printed-quadruped/
@@ -133,7 +134,7 @@ sim2real-3d-printed-quadruped/
 └── media/                     # Videos, images, demos
 ```
 
-## 🔬 Technical Achievements
+## Technical Achievements
 
 1. **Sim-to-Real Transfer**: Successfully deployed Isaac Lab trained model on physical hardware
 2. **Real-time AI Inference**: PyTorch model running at 20Hz on physical robot  
@@ -141,7 +142,7 @@ sim2real-3d-printed-quadruped/
 4. **Modular Architecture**: Separate controllers for AI, hardware, and user input
 5. **Production-Ready**: Stable, error-free operation for extended periods
 
-## 📈 System Architecture
+## System Architecture
 
 ```
 ┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌─────────────┐
@@ -157,7 +158,7 @@ sim2real-3d-printed-quadruped/
                                                           └─────────────┘
 ```
 
-## 🧠 AI Model Details
+## AI Model Details
 
 - **Observation Vector**: 72 dimensions
   - Base velocity (6D)
@@ -170,9 +171,9 @@ sim2real-3d-printed-quadruped/
 
 - **Action Vector**: 12 dimensions (joint position targets)
 - **Network Architecture**: Policy network exported from Isaac Lab
-- **Training Time**: 999 episodes (~2 hours)
+- **Training Time**: 999 episodes (~20 minutes)
 
-## 🔧 Hardware Interface
+## Hardware Interface
 
 ### Arduino Firmware Features
 - **Serial Communication**: Receives joint commands via USB
@@ -185,7 +186,7 @@ sim2real-3d-printed-quadruped/
 2. **Velocity Controller**: Processes keyboard input, publishes velocity commands  
 3. **Hardware Controller**: Interfaces with Arduino, converts ROS messages to serial
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 - **Vision Integration**: Camera-based navigation
 - **Advanced Gaits**: Implement trot, bound, gallop
@@ -193,7 +194,7 @@ sim2real-3d-printed-quadruped/
 - **Mobile Control**: Smartphone app interface
 - **Sensor Fusion**: IMU, encoders, force sensors
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Areas of focus:
 - **Hardware**: CAD improvements, new components
@@ -203,17 +204,17 @@ Contributions welcome! Areas of focus:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## 📜 License
+## License
 
 MIT License - see [LICENSE](LICENSE)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **NVIDIA Isaac Lab** for simulation platform
 - **ROS2 Community** for robotics middleware
 - **Arduino Community** for hardware interface tools
 
-## 📞 Support
+## Support
 
 - **Issues**: Use GitHub Issues for bug reports
 - **Discussions**: GitHub Discussions for questions
