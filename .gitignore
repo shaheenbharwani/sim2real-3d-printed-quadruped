@@ -205,3 +205,25 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ROS2
+install/
+build/
+log/
+
+# Isaac Lab/Simulation
+*.usd
+*.usda
+*.usdc
+logs/
+wandb/
+
+# Hardware/CAD
+*.bak
+*.dwl
+*.dwl2
+
+# Large model files (use Git LFS instead)
+*.pt
+*.pth
+*.onnx
