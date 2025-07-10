@@ -212,9 +212,9 @@ build/
 log/
 
 # Isaac Lab/Simulation
-*.usd
-*.usda
-*.usdc
+# *.usd
+# *.usda
+# *.usdc
 logs/
 wandb/
 
@@ -224,6 +224,6 @@ wandb/
 *.dwl2
 
 # Large model files (use Git LFS instead)
-*.pt
-*.pth
-*.onnx
+# *.pt
+# *.pth
+# *.onnx
